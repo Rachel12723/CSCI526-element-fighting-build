@@ -6,7 +6,27 @@
     <title>Unity WebGL Player | Element Fighting</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
-  </head>
+  
+<style>
+    /* Additional styles to make canvas responsive */
+    #unity-container {
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+        background-color: black;
+    }
+    #unity-canvas {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+</style>
+
+</head>
   <body>
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=960 height=600></canvas>
